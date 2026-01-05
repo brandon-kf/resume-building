@@ -1,0 +1,115 @@
+body {
+    height: 11in;
+    width: 8.5in;
+    overflow: none;
+    font-size: 12px;
+    font-family: arial;
+}
+
+.page {
+    padding: 0.45in 0.5in 0.5in 0.5in;
+    height: 9.55in;
+    border: 1px solid #ccc;
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a[href]:after {
+    display: none;
+}
+
+#header>div {
+    display: inline-block;
+    /* margin-right: 15px; */
+    vertical-align: top;
+}
+
+#header-right {
+    margin-top: 2px;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+    float: right;
+}
+
+.section {
+    margin-top: 16px;
+    clear: both;
+}
+
+.section-header {
+    font-size: 18px;
+    vertical-align: top;
+    margin-bottom: 8px;
+}
+
+.section-item {
+    margin-bottom: 13px;
+}
+
+.section-item-header {
+    display: block;
+    height: 16px;
+    clear: both;
+}
+
+.section-item-skills {
+    display: block;
+    padding-bottom: 2px;
+    clear: both;
+}
+
+.section-item-skills .bg-light {
+    background-color: #ddd !important;
+}
+
+.section-item-header-extended {
+    display: block;
+    height: 34px;
+    clear: both;
+}
+
+.section-item-header-role {
+    float: left;
+}
+
+.section-item-header-location {
+    display: block;
+    clear: both;
+}
+
+.section-item-header-duration {
+    float: right;
+}
+
+.section-item-bullets {
+    display: block;
+    padding-left: 15px;
+    clear: both;
+}
+
+.section-item-bullet {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+    text-align: justify;
+    margin: 2px 0;
+}
+
+#experience .section-item {
+    padding-left: 35px;
+}
+
+#experience .section-item::before {
+    content: url('icon-work.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.5;
+    position: relative;
+    top: 4px;
+    left: -32px;
+}
