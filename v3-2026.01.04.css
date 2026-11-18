@@ -1,15 +1,13 @@
 body {
-    height: 11in;
-    width: 8.5in;
-    overflow: none;
     font-size: 12px;
     font-family: arial;
 }
 
 .page {
-    padding: 0.45in 0.5in 0.5in 0.5in;
-    height: 9.55in;
-    border: 1px solid #ccc;
+    padding: 0.5in 0.5in 0.5in 0.5in;
+    height: 11in;
+    width: 8.5in;
+    /* border: 1px solid #ccc; */
 }
 
 a {
@@ -36,8 +34,8 @@ a[href]:after {
 }
 
 .section {
-    margin-top: 16px;
     clear: both;
+    margin-top: 16px;
 }
 
 .section-header {
@@ -57,8 +55,11 @@ a[href]:after {
 }
 
 .section-item-skills {
-    display: block;
-    padding-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2px 0;
     clear: both;
 }
 
@@ -104,7 +105,7 @@ a[href]:after {
 }
 
 #experience .section-item::before {
-    content: url('icon-work.svg');
+    content: url('icons/work.svg');
     display: block;
     width: 16px;
     height: 1px;
@@ -112,4 +113,112 @@ a[href]:after {
     position: relative;
     top: 4px;
     left: -32px;
+}
+
+#readings .section-item {
+    padding-left: 35px;
+}
+
+#readings.section::before {
+    content: url('icons/shelves.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.2;
+    position: relative;
+    top: 38px;
+    left: 0px;
+}
+
+#certification {
+    margin-top: 0;
+}
+
+#certification .section-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6%;
+}
+
+#certification .section-item {
+    width: 47%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-bottom: 0; */
+}
+
+#certification .cert-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+#certification .cert-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#certification .cert-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 80px);
+    height: 25px;
+}
+
+#certification .cert-title {
+    font-weight: 700;
+    width: 100%;
+}
+
+#certification .cert-date {
+    margin-left: auto;
+}
+
+#education .section-item {
+    padding-left: 35px;
+}
+
+#education .section-item.school::before {
+    content: url('icons/school.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.2;
+    position: relative;
+    top: 4px;
+    left: -34px;
+}
+
+#education .section-item.work::before {
+    content: url('icons/work.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.5;
+    position: relative;
+    top: 4px;
+    left: -32px;
+}
+
+#community .section-item {
+    padding-left: 35px;
+}
+
+#community .section-item::before {
+    content: url('icons/volunteer.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.1;
+    position: relative;
+    top: 4px;
+    left: -33px;
 }

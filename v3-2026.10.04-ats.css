@@ -1,0 +1,285 @@
+body {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    padding: 0.45in 0.5in 0.45in 0.5in;
+    height: 11in;
+    width: 8.5in;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a[href]:after {
+    display: none;
+}
+
+#header>div {
+    display: inline-block;
+    /* margin-right: 15px; */
+    vertical-align: top;
+}
+
+#header-right {
+    margin-top: 2px;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+    float: right;
+    font-style: normal;
+}
+
+#header-right div {
+    margin-bottom: 2px;
+}
+
+.candidate-name {
+    font-size: 24px;
+    margin: 0;
+    margin-left: -1px;
+}
+
+.candidate-title {
+    font-size: 15px;
+}
+
+#summary p {
+    margin: 0;
+    text-align: justify;
+}
+
+.section {
+    clear: both;
+    margin-top: 9px;
+}
+
+.section-header {
+    font-size: 18px;
+    vertical-align: top;
+    margin-bottom: 5px;
+}
+
+.section-item {
+    margin-bottom: 10px;
+}
+
+.section-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    min-height: 16px;
+    clear: both;
+}
+
+.section-item-header > div {
+    display: inline-block;
+}
+
+.section-item-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2px 0;
+    clear: both;
+}
+
+.section-item-skills .bg-light {
+    background-color: #ddd !important;
+}
+
+.section-item-header-extended {
+    display: block;
+    height: 34px;
+    clear: both;
+}
+
+.section-item-header-role {
+    float: none;
+}
+
+.section-item-header-location {
+    display: block;
+    clear: both;
+}
+
+.section-item-header-duration {
+    float: none;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 7px;
+    list-style: none;
+    margin: 2px 0;
+    padding: 0;
+}
+
+.skill-list li {
+    background-color: #ddd;
+    border-radius: 999px;
+    padding: 1px 9px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.role-skill-list {
+    margin-bottom: 3px;
+}
+
+.bullet-list {
+    margin: 2px 0 0 0;
+    padding-left: 16px;
+}
+
+.bullet-list li {
+    text-align: justify;
+    margin: 1px 0;
+}
+
+.section-item-bullets {
+    display: block;
+    padding-left: 15px;
+    clear: both;
+}
+
+.section-item-bullet {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+    text-align: justify;
+    margin: 2px 0;
+}
+
+#experience .section-item {
+    padding-left: 35px;
+}
+
+#experience .section-item::before {
+    content: url('icons/work.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.5;
+    position: relative;
+    top: 4px;
+    left: -32px;
+}
+
+#readings .section-item {
+    padding-left: 35px;
+}
+
+#readings.section::before {
+    content: url('icons/shelves.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.2;
+    position: relative;
+    top: 38px;
+    left: 0px;
+}
+
+#certification {
+    margin-top: 0;
+}
+
+#certification .section-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6%;
+}
+
+#certification .section-item {
+    width: 47%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-bottom: 0; */
+}
+
+#certification .cert-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+#certification .cert-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#certification .cert-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 80px);
+    height: 25px;
+}
+
+#certification .cert-title {
+    font-weight: 700;
+    width: 100%;
+}
+
+#certification .cert-date {
+    margin-left: auto;
+}
+
+#education .section-item {
+    padding-left: 35px;
+}
+
+#education .section-item.school::before {
+    content: url('icons/school.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.2;
+    position: relative;
+    top: 4px;
+    left: -34px;
+}
+
+#education .section-item.work::before {
+    content: url('icons/work.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.5;
+    position: relative;
+    top: 4px;
+    left: -32px;
+}
+
+#community .section-item {
+    padding-left: 35px;
+}
+
+#community .section-item::before {
+    content: url('icons/volunteer.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.1;
+    position: relative;
+    top: 4px;
+    left: -33px;
+}
