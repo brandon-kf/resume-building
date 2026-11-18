@@ -1,0 +1,229 @@
+@page {
+    size: 8.5in 11in;
+    margin: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: arial;
+}
+
+.page {
+    padding: 0.5in 0.5in 0.5in 0.5in;
+    height: 11in;
+    width: 8.5in;
+    /*border: 1px solid #ccc;*/
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a[href]:after {
+    display: none;
+}
+
+#header>div {
+    display: inline-block;
+    /* margin-right: 15px; */
+    vertical-align: top;
+}
+
+#header-right {
+    margin-top: 2px;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
+    float: right;
+}
+
+.section {
+    clear: both;
+    margin-top: 16px;
+}
+
+.section-header {
+    font-size: 18px;
+    vertical-align: top;
+    margin-bottom: 8px;
+}
+
+.section-item {
+    margin-bottom: 13px;
+}
+
+.section-item-header {
+    display: block;
+    height: 16px;
+    clear: both;
+}
+
+.section-item-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2px 0;
+    clear: both;
+}
+
+.section-item-skills .bg-light {
+    background-color: #ddd !important;
+}
+
+.section-item-header-extended {
+    display: block;
+    height: 34px;
+    clear: both;
+}
+
+.section-item-header-role {
+    float: left;
+}
+
+.section-item-header-location {
+    display: block;
+    clear: both;
+}
+
+.section-item-header-duration {
+    float: right;
+}
+
+.section-item-bullets {
+    display: block;
+    padding-left: 15px;
+    clear: both;
+}
+
+.section-item-bullet {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+    text-align: justify;
+    margin: 2px 0;
+}
+
+#experience .section-item {
+    padding-left: 35px;
+}
+
+#experience .section-item::before {
+    content: url('icons/work.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.5;
+    position: relative;
+    top: 4px;
+    left: -32px;
+}
+
+#readings .section-item {
+    padding-left: 35px;
+}
+
+#readings.section::before {
+    content: url('icons/shelves.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.2;
+    position: relative;
+    top: 38px;
+    left: 0px;
+}
+
+#certification {
+    margin-top: 0;
+}
+
+#certification .section-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6%;
+}
+
+#certification .section-item {
+    width: 47%;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-bottom: 0; */
+}
+
+#certification .cert-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+#certification .cert-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#certification .cert-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% - 55px);
+    height: 25px;
+}
+
+#certification .cert-title {
+    font-weight: 700;
+    width: 100%;
+}
+
+#certification .cert-date {
+    margin-left: auto;
+}
+
+#education .section-item {
+    padding-left: 35px;
+}
+
+#education .section-item.school::before {
+    content: url('icons/school.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.2;
+    position: relative;
+    top: 4px;
+    left: -34px;
+}
+
+#education .section-item.work::before {
+    content: url('icons/work.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.5;
+    position: relative;
+    top: 4px;
+    left: -32px;
+}
+
+#community .section-item {
+    padding-left: 35px;
+}
+
+#community .section-item::before {
+    content: url('icons/volunteer.svg');
+    display: block;
+    width: 16px;
+    height: 1px;
+    scale: 1.1;
+    position: relative;
+    top: 4px;
+    left: -33px;
+}
